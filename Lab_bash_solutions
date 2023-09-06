@@ -1,0 +1,249 @@
+1. Using the echo command print in console "Hello World". Here is some info about echo command [https://discuss.codecademy.com/t/what-are-practical-uses-of-the-echo-command/394788]
+
+"echo "hello world" > lab-bash"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina morning % cd lab-bash
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls
+Lab Bash	inputs		lorem-copy	readme.md
+exercices	lorem		outputs
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % echo "hello world" > lab-bash
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls
+exercices	lab-bash	lorem-copy	readme.md
+inputs		lorem		outputs
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % 
+
+2. Create a new directory called new_dir.
+
+"mkdir new_dir"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % mkdir new_dir
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls
+exercices	lab-bash	lorem-copy	outputs
+inputs		lorem		new_dir		readme.md
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % 
+
+3. Delete/Remove the directory new_dir.
+
+"rmdir "new_dir"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls
+exercices	lab-bash	lorem-copy	outputs
+inputs		lorem		new_dir		readme.md
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % rmdir "new_dir"
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls
+exercices	lab-bash	lorem-copy	readme.md
+inputs		lorem		outputs
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % 
+
+4. Copy the file sed.txt from the lorem folder and paste it to the folder lorem-copy folder.
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % cd lorem
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % cp ~/documents/marina/bootcamp/week_1/day_1/morning/lab-bash/lorem/sed.txt ~/documents/marina/bootcamp/week_1/day_1/morning/lab-bash/lorem-copy
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % cd ../
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls
+exercices	lab-bash	lorem-copy	readme.md
+inputs		lorem		outputs
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % cd lorem-copy
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % ls
+dummy_file.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % 
+
+
+5.Copy the other two files from the lorem folder to lorem-copy folder in just one line using semicolon ;.
+
+"cp lorem/at.txt lorem/lorem.txt lorem-copy"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina morning % cd lab-bash
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls
+Lab_bash_solutions	lab-bash		outputs
+exercices		lorem			readme.md
+inputs			lorem-copy
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % cp lorem/at.txt lorem/lorem.txt lorem-copy   
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls
+Lab_bash_solutions	inputs			lorem			outputs
+exercices		lab-bash		lorem-copy		readme.md
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % cd lorem-copy
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % 
+
+
+6. Show the sed.txt file content from the lorem folder.
+
+"cat sed.txt"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % cd lorem
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % ls
+dummy_file.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % 
+
+7. Show the at.txt file and lorem.txt file contents from lorem folder.
+
+"cat at.txt lorem.txt"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % cd lorem
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % cat at.txt lorem.txt               
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.(base) marina@MacBook-MacBook-Pro-de-Marina lorem % 
+
+8. Print the first 3 rows in sed.txt file from lorem-copy folder.
+
+"head -3 sed.txt"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % cd lorem-copy
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % 
+
+
+9. Print the last 3 rows in sed.txt file from lorem-copy folder.
+
+"tail -3 sed.txt"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % 
+
+10. Add Homo homini lupus. at the end of sed.txt file in the lorem-copy folder.
+
+"echo "Homo homini lupus."
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % echo "Homo homini lupus." >> sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % 
+
+11. Print the last 3 rows in sed.txt file from lorem-copy folder. You should see Homo homini lupus..
+
+"tail -3 sed.txt"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % tail -3 sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem-copy % 
+
+12. sed command is used to replace the text in a file. Use the sed command to replace all occurances of et with ET in the file at.txt file present in the folder lorem. You can use the following link to refer to sed commands [https://www.linode.com/docs/guides/manipulate-text-from-the-command-line-with-sed/] Check the contents of the sed.txt file using cat command.
+
+""
+
+
+
+
+13. Find who is the system user.
+
+"whoami"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina ~ % whoami
+marina
+(base) marina@MacBook-MacBook-Pro-de-Marina ~ % 
+
+14. Find the current path of the directory you are in.
+
+"pwd"
+
+Last login: Tue Sep  5 15:13:37 on ttys002
+(base) marina@MacBook-MacBook-Pro-de-Marina ~ % pwd
+/Users/marina
+(base) marina@MacBook-MacBook-Pro-de-Marina ~ % 
+
+
+15. List all files with the extension .txt in lorem folder.
+
+"find . -name '*.txt'"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % find . -name '*.txt'
+./at.txt
+./lorem.txt
+./sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % 
+
+16. Count the rows in sed.txt file from lorem folder. Look concatenate cat and wc with the pipe |.
+
+"wc -l "file""
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % wc -l sed.txt
+       9 sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % 
+
+"cat sed.txt|wc -l sed.txt"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % wc -l sed.txt
+       9 sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % 
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % cat sed.txt|wc -l sed.txt
+       9 sed.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % 
+
+17. Count the files which start with lorem in all directories.
+
+"ls -d *lorem* | wc -l"
+
+(base) marina@MacBook-MacBook-Pro-de-Marina morning % cd lab-bash
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls
+Lab_bash_solutions	lab-bash		outputs
+exercices		lorem			readme.md
+inputs			lorem-copy
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls -d *lorem* | wc -l
+       2
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % 
+
+
+
