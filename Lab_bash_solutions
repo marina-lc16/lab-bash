@@ -176,10 +176,27 @@ Homo homini lupus.
 
 12. sed command is used to replace the text in a file. Use the sed command to replace all occurances of et with ET in the file at.txt file present in the folder lorem. You can use the following link to refer to sed commands [https://www.linode.com/docs/guides/manipulate-text-from-the-command-line-with-sed/] Check the contents of the sed.txt file using cat command.
 
-""
+"sed -i -e "s/et/ET/g" at.txt"
 
-
-
+(base) marina@MacBook-MacBook-Pro-de-Marina morning % cd lab-bash
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % ls
+Lab_bash_solutions   lab-bash             outputs
+exercices            lorem                readme.md
+inputs               lorem-copy
+(base) marina@MacBook-MacBook-Pro-de-Marina lab-bash % cd lorem
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % sed -i -e "s/et/ET/g" at.txt
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+(base) marina@MacBook-MacBook-Pro-de-Marina lorem % 
 
 13. Find who is the system user.
 
